@@ -1,0 +1,19 @@
+@media (min-width: 786px) {
+    .news-input{
+        width: 50%;
+    }
+}
+
+body::before{
+    display: block;
+    content: "";
+    height: 56px;
+}
+
+body::after{
+    display: block;
+    content: "";
+    height: 56px;
+
+
+}

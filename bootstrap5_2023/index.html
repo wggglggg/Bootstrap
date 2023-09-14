@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>跟着“我在B站学编程”学BootStrap5</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"-->
+        <!--      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"-->
+        <!--      crossorigin="anonymous">-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!--导航栏-->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">我在学习BootStrap</a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <div class="nav-link">注册</div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link">登陆</div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link">中文</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--头块-->
+        <section class="p-5  bg-dark text-center text-sm-start"> <!--padding-5 小的时候居中center,再大一点就靠左start-->
+            <div class="container">
+                <div class="d-flex text-light">
+                    <div> <!--display-flex-->
+                        <h1>讲一口<span class="text-warning">标准</span>美语</h1>
+                        <p class="my-4"> <!--y是纵轴  x是横轴类似margin top margin bottom-->
+                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eveniet hic,
+                                         impedit iure
+                                         libero placeat quaerat sint? Assumenda beatae blanditiis, consequuntur illum,
+                                         ipsa laudantium nisi
+                                         provident quaerat quasi qui tempora!</p>
+                        <button class="btn btn-lg btn-primary">开始美语之旅</button>
+                    </div>
+                    <img src="img/showcase.svg" alt="showcase" class="w-50  d-none d-md-block">
+                </div>
+            </div>
+        </section>
+        <!--注册块-->
+        <section class="p-5 bg-primary text-light">
+            <div class="container">
+                <div class="d-md-flex justify-content-between align-items-center">
+                    <h1>点击注册加入我们</h1>
+                    <div class="input-group news-input">
+                        <input type="text" class="form-control" placeholder="输入你要查询内容">
+                        <button class="btn btn-dark btn-lg">搜索</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--三卡片-->
+        <section class="p-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md"> <!--col加上md col-md 大于Medium>768px时加载col变成三列方式-->
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">
+                                    北美英语
+                                </h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur
+                                    corporis ducimus ipsam natus placeat porro, qui quibusdam quo totam. Autem
+                                </p>
+                                <a href="#" class="btn btn-primary mt-2">学习</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md"> <!--col加上md col-md 大于Medium>768px时加载col变成三列方式-->
+                        <div class="card bg-secondary text-light">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">
+                                    英国英语
+                                </h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur
+                                    corporis ducimus ipsam natus placeat porro, qui quibusdam quo totam. Autem
+                                </p>
+                                <a href="#" class="btn btn-dark mt-2">学习</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md"> <!--col加上md col-md 大于Medium>768px时加载col变成三列方式-->
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">
+                                    澳洲英语
+                                </h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur
+                                    corporis ducimus ipsam natus placeat porro, qui quibusdam quo totam. Autem
+                                </p>
+                                <a href="#" class="btn btn-primary mt-2">学习</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--老师简介-->
+        <section class="p-5">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <!--justify-content-between align-items-center垂直剧中-->
+                    <div class="col-md">
+                        <img src="img/1.svg" alt="1" class="img-fluid">
+                        <!--Bootstrap的图像使用 .img-fluid进行响应。 这将对图像应用 max-width: 100%; 和 height: auto;，以便它随父元素缩放。-->
+                    </div>
+                    <div class="col-md p-5">
+                        <h2>美国英语</h2>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur dicta doloremque
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur delectus
+                            dolorum vero voluptate! Consectetur, cum dicta enim eos exercitationem minus officia? A
+                            consequuntur ipsum laboriosam necessitatibus qui quod velit?
+                        </p>
+                        <a href="#" class="btn btn-primary">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--课程简介-->
+        <section class="p-5 bg-dark text-light">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <!--justify-content-between align-items-center垂直剧中-->
+
+                    <div class="col-md p-5">
+                        <h2>英国英语</h2>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur dicta doloremque
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur delectus
+                            dolorum vero voluptate! Consectetur, cum dicta enim eos exercitationem minus officia? A
+                            consequuntur ipsum laboriosam necessitatibus qui quod velit?
+                        </p>
+                        <a href="#" class="btn btn-primary">查看详情</a>
+                    </div>
+
+                    <div class="col-md">
+                        <img src="img/2.svg" alt="1" class="img-fluid">
+                        <!--Bootstrap的图像使用 .img-fluid进行响应。 这将对图像应用 max-width: 100%; 和 height: auto;，以便它随父元素缩放。-->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--手风琴向下弹窗-->
+        <section class="p-5">
+            <div class="container">
+                <h2 class="text-center">常见问题</h2>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                        accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                                        non cupidatat skateboard dolor brunch. Food truck quinoa
+                                                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                                        put a bird on it squid single-origin coffee nulla assumenda
+                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                                        wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                                        excepteur butcher vice lomo. Leggings occaecat craft beer
+                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                        haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                             aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                        accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                                        non cupidatat skateboard dolor brunch. Food truck quinoa
+                                                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                                        put a bird on it squid single-origin coffee nulla assumenda
+                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                                        wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                                        excepteur butcher vice lomo. Leggings occaecat craft beer
+                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                        haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                             aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                        accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                                        non cupidatat skateboard dolor brunch. Food truck quinoa
+                                                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                                        put a bird on it squid single-origin coffee nulla assumenda
+                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                                        wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                                        excepteur butcher vice lomo. Leggings occaecat craft beer
+                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                        haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--老师简介-->
+        <section class="p-5 bg-primary">
+            <div class="container">
+                <h2 class="text-center text-light">讲师介绍</h2>
+                <p class="lead text-white text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsum perferendis sit unde velit.
+                    Ab ad, at dolor enim eum fuga fugiat labore nostrum officiis pariatur perferendis reiciendis ut
+                    vitae!
+                </p>
+                <div class="row g-4 "> <!--gap-4-->
+                    <div class="col-md-6 col-lg-3"> <!--全屏12等分col-md-6屏幕大于md每一块占6分， col-lg-3大于lg时占3分 -->
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="img/01-man.jpeg" class="mb-3 rounded-circle">
+                                <h3 class="card-title">Bird</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae
+                                                     dicta esse ex harum ipsa ipsam provident repellendus repudiandae
+                                                     sapiente soluta unde voluptatem, voluptatum. Assumenda mollitia
+                                                     pariatur repellendus sint voluptatum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="img/02-man.jpeg" class="mb-3 rounded-circle">
+                                <h3 class="card-title">Cow</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae
+                                                     dicta esse ex harum ipsa ipsam provident repellendus repudiandae
+                                                     sapiente soluta unde voluptatem, voluptatum. Assumenda mollitia
+                                                     pariatur repellendus sint voluptatum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="img/03-man.jpeg" class="mb-3 rounded-circle">
+                                <h3 class="card-title">Buffalo</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae
+                                                     dicta esse ex harum ipsa ipsam provident repellendus repudiandae
+                                                     sapiente soluta unde voluptatem, voluptatum. Assumenda mollitia
+                                                     pariatur repellendus sint voluptatum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="img/04-man.jpeg" class="mb-3 rounded-circle">
+                                <h3 class="card-title">Goat</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae
+                                                     dicta esse ex harum ipsa ipsam provident repellendus repudiandae
+                                                     sapiente soluta unde voluptatem, voluptatum. Assumenda mollitia
+                                                     pariatur repellendus sint voluptatum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--联系我们-->
+        <section class="p-5">
+            <div class="container">
+                <h2 class="text-center mb-4">联系我们</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">联系电话：13911112222</li>
+                    <li class="list-group-item">邮箱：xxxxxx@139.com</li>
+                    <li class="list-group-item">联系地址：黑龙江省哈尔滨市道外区黄金路44号-家里墩工程科技大学</li>
+                    <li class="list-group-item">微信公众号：华为遥遥领先</li>
+                </ul>
+            </div>
+        </section>
+        <!--页脚-->
+        <footer class="p-2 bg-dark text-center text-light fixed-bottom">
+            <div class="container">
+                <p class="lead">Copyright &copy; 2023 我向"我在B站学编程"学Bootstrap5</p>
+            </div>
+        </footer>
+
+
+        <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous">
+
+        </script>
+    </body>
+</html>
