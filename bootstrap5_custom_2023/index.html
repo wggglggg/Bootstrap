@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>跟着“我在B站学编程”学BootStrap5</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+             integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+        crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="css/test.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!--导航栏-->
+        <nav class="navbar navbar-expand-lg bg-primary bg-gradient navbar-dark fixed-top shadow">
+            <div class="container">
+                <a href="#" class="navbar-brand">我在学习BootStrap</a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <div class="nav-link">注册</div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link">登陆</div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link">中文</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--头块-->
+        <section class="pt-11 bg-primary bg-gradient text-center text-sm-start"> <!--padding-5 小的时候居中center,再大一点就靠左start-->
+            <div class="container">
+                <div class="d-flex text-light">
+                    <div> <!--display-flex-->
+                        <h1>讲一口<span class="text-warning">标准</span>美语</h1>
+                        <p class="my-4"> <!--y是纵轴  x是横轴类似margin top margin bottom-->
+                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eveniet hic,
+                                         impedit iure
+                                         libero placeat quaerat sint? Assumenda beatae blanditiis, consequuntur illum,
+                                         ipsa laudantium nisi
+                                         provident quaerat quasi qui tempora!</p>
+                        <button class="btn btn-lg btn-light">开始美语之旅</button>
+                    </div>
+                    <img src="img/showcase.svg" alt="showcase" class="w-50  d-none d-md-block">
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,32L18.5,42.7C36.9,53,74,75,111,85.3C147.7,96,185,96,222,122.7C258.5,149,295,203,332,234.7C369.2,267,406,277,443,266.7C480,256,517,224,554,229.3C590.8,235,628,277,665,277.3C701.5,277,738,235,775,234.7C812.3,235,849,277,886,277.3C923.1,277,960,235,997,186.7C1033.8,139,1071,85,1108,101.3C1144.6,117,1182,203,1218,234.7C1255.4,267,1292,245,1329,213.3C1366.2,181,1403,139,1422,117.3L1440,96L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"></path></svg>
+        </section>
+        <!--注册块-->
+        <section class="">
+            <div class="pt-9 container text-center">
+                <!-- <div class="d-md-flex justify-content-between align-items-center"> -->
+                    <h1 class="mb-3 fs-1">点击注册加入我们</h1>
+                    <div class="heading-line"></div>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="输入你要查询内容">
+                        <button class="btn btn-primary btn-lg">搜索</button>
+                    </div>
+
+                <!-- </div> -->
+            </div>
+            
+        </section>
+        <!--三卡片-->
+        <section class="p-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md"> <!--col加上md col-md 大于Medium>768px时加载col变成三列方式-->
+                        <div class="card ">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">
+                                    英语小故事
+                                </h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur
+                                    corporis ducimus ipsam natus placeat porro, qui quibusdam quo totam. Autem
+                                </p>
+                                <a href="#" class="btn btn-light mt-2">学习</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md"> <!--col加上md col-md 大于Medium>768px时加载col变成三列方式-->
+                        <div class="card ">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">
+                                    英语俚语
+                                </h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur
+                                    corporis ducimus ipsam natus placeat porro, qui quibusdam quo totam. Autem
+                                </p>
+                                <a href="#" class="btn btn-light mt-2">学习</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md"> <!--col加上md col-md 大于Medium>768px时加载col变成三列方式-->
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">
+                                    视频面对面交流
+                                </h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur
+                                    corporis ducimus ipsam natus placeat porro, qui quibusdam quo totam. Autem
+                                </p>
+                                <a href="#" class="btn btn-light mt-2">学习</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--英语特色简介-->
+        <section class="bg-primary bg-gradient text-light">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L26.7,234.7C53.3,213,107,171,160,149.3C213.3,128,267,128,320,128C373.3,128,427,128,480,133.3C533.3,139,587,149,640,133.3C693.3,117,747,75,800,80C853.3,85,907,139,960,144C1013.3,149,1067,107,1120,106.7C1173.3,107,1227,149,1280,160C1333.3,171,1387,149,1413,138.7L1440,128L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <!--justify-content-between align-items-center垂直剧中-->
+                    <div class="col-md">
+                        <img src="img/1.svg" alt="1" class="img-fluid">
+                        <!--Bootstrap的图像使用 .img-fluid进行响应。 这将对图像应用 max-width: 100%; 和 height: auto;，以便它随父元素缩放。-->
+                    </div>
+                    <div class="col-md p-5">
+                        <h2>全英语环境</h2>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur dicta doloremque
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur delectus
+                            dolorum vero voluptate! Consectetur, cum dicta enim eos exercitationem minus officia? A
+                            consequuntur ipsum laboriosam necessitatibus qui quod velit?
+                        </p>
+                        <a href="#" class="btn btn-primary">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        <!-- </section> -->
+
+        <!--课程简介-->
+        <!-- <section class="p-5 bg-dark text-light"> -->
+            <div class="container mt-7">
+                <div class="row justify-content-between align-items-center">
+                    <!--justify-content-between align-items-center垂直剧中-->
+
+                    <div class="col-md p-5">
+                        <h2>50%口语 45%听力 5%写作</h2>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur dicta doloremque
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur delectus
+                            dolorum vero voluptate! Consectetur, cum dicta enim eos exercitationem minus officia? A
+                            consequuntur ipsum laboriosam necessitatibus qui quod velit?
+                        </p>
+                        <a href="#" class="btn btn-primary">查看详情</a>
+                    </div>
+
+                    <div class="col-md">
+                        <img src="img/2.svg" alt="1" class="img-fluid">
+                        <!--Bootstrap的图像使用 .img-fluid进行响应。 这将对图像应用 max-width: 100%; 和 height: auto;，以便它随父元素缩放。-->
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L18.5,240C36.9,224,74,192,111,181.3C147.7,171,185,181,222,202.7C258.5,224,295,256,332,256C369.2,256,406,224,443,202.7C480,181,517,171,554,170.7C590.8,171,628,181,665,181.3C701.5,181,738,171,775,170.7C812.3,171,849,181,886,197.3C923.1,213,960,235,997,234.7C1033.8,235,1071,213,1108,181.3C1144.6,149,1182,107,1218,106.7C1255.4,107,1292,149,1329,154.7C1366.2,160,1403,128,1422,112L1440,96L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"></path></svg>
+        </section>
+
+        <!--手风琴向下弹窗-->
+        <section class="p-5">
+            <div class="container">
+                <h2 class="text-center">常见问题</h2>
+                <div class="heading-line"></div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item shadow">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                英语聊美食 #1
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                        accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                                        non cupidatat skateboard dolor brunch. Food truck quinoa
+                                                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                                        put a bird on it squid single-origin coffee nulla assumenda
+                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                                        wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                                        excepteur butcher vice lomo. Leggings occaecat craft beer
+                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                        haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item shadow mt-3">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                了解英语电视剧 #2
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                             aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                        accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                                        non cupidatat skateboard dolor brunch. Food truck quinoa
+                                                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                                        put a bird on it squid single-origin coffee nulla assumenda
+                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                                        wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                                        excepteur butcher vice lomo. Leggings occaecat craft beer
+                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                        haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item shadow mt-3">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                旅游使用英语 #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                             aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                        accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                                        non cupidatat skateboard dolor brunch. Food truck quinoa
+                                                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                                        put a bird on it squid single-origin coffee nulla assumenda
+                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                                        wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                                        excepteur butcher vice lomo. Leggings occaecat craft beer
+                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                        haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--老师简介-->
+        <section class="p-5">
+            <div class="container">
+                <h2 class="text-center">讲师介绍</h2>
+                <div class="heading-line"></div>
+                <p class="lead text-white text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsum perferendis sit unde velit.
+                    Ab ad, at dolor enim eum fuga fugiat labore nostrum officiis pariatur perferendis reiciendis ut
+                    vitae!
+                </p>
+                <div class="row g-4 "> <!--gap-4-->
+                    <div class="col-md-6 col-lg-3"> <!--全屏12等分col-md-6屏幕大于md每一块占6分， col-lg-3大于lg时占3分 -->
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="img/01-man.jpeg" class="mb-3 rounded-circle">
+                                <h3 class="card-title">Bird</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae
+                                                     dicta esse ex harum ipsa ipsam provident repellendus repudiandae
+                                                     sapiente soluta unde voluptatem, voluptatum. Assumenda mollitia
+                                                     pariatur repellendus sint voluptatum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="img/02-man.jpeg" class="mb-3 rounded-circle">
+                                <h3 class="card-title">Cow</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae
+                                                     dicta esse ex harum ipsa ipsam provident repellendus repudiandae
+                                                     sapiente soluta unde voluptatem, voluptatum. Assumenda mollitia
+                                                     pariatur repellendus sint voluptatum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="img/03-man.jpeg" class="mb-3 rounded-circle">
+                                <h3 class="card-title">Buffalo</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae
+                                                     dicta esse ex harum ipsa ipsam provident repellendus repudiandae
+                                                     sapiente soluta unde voluptatem, voluptatum. Assumenda mollitia
+                                                     pariatur repellendus sint voluptatum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="img/04-man.jpeg" class="mb-3 rounded-circle">
+                                <h3 class="card-title">Goat</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae
+                                                     dicta esse ex harum ipsa ipsam provident repellendus repudiandae
+                                                     sapiente soluta unde voluptatem, voluptatum. Assumenda mollitia
+                                                     pariatur repellendus sint voluptatum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--联系我们-->
+        <section class="p-5">
+            <div class="container">
+                <h2 class="text-center mb-4">联系我们</h2>
+                <div class="heading-line"></div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">联系电话：13911112222</li>
+                    <li class="list-group-item">邮箱：xxxxxx@139.com</li>
+                    <li class="list-group-item">联系地址：黑龙江省哈尔滨市道外区黄金路44号-家里墩工程科技大学</li>
+                    <li class="list-group-item">微信公众号：华为遥遥领先</li>
+                </ul>
+            </div>
+        </section>
+        <!--页脚-->
+        <footer class="p-2 bg-dark text-center text-light fixed-bottom">
+            <div class="container">
+                <p class="lead">Copyright &copy; 2023 我向"我在B站学编程"学Bootstrap5</p>
+            </div>
+        </footer>
+
+
+        <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous">
+
+        </script>
+    </body>
+</html>
